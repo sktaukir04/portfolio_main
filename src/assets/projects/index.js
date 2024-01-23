@@ -16,6 +16,7 @@ import gptai from './gptai.png'
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import wonderbiz from './wonderbiz.png'
 
 
 export {
@@ -36,5 +37,6 @@ export {
   github,
   menu,
   close,
-  jio
+  jio,
+  wonderbiz
 };

@@ -8,12 +8,13 @@ import mui from '../assets/mui.png'
 import xampp from '../assets/projects/xamp.png'
 import git from '../assets/projects/git.png';
 import { best } from '../assets/projects/index';
-import { jio } from '../assets/projects/index';
-import { instagram,linkedin,twitter,whatsapp } from '../assets/projects/index';
+import { jio,wonderbiz } from '../assets/projects/index';
+import { instagram,linkedin,twitter,whatsapp,Github } from '../assets/projects/index';
 import {  FaInstagram,
     FaWhatsapp,
     FaLinkedin,
-    FaTwitter,} from 'react-icons/fa';
+    FaTwitter,
+    FaGithub,} from 'react-icons/fa';
 
 
 export const skills = [
@@ -99,6 +100,18 @@ export const experiences = [
       "Automating the product and testing to ensure the best build quality ",
     ],
   },
+  {
+    title: "Software Engineer",
+    company_name: "Wonderbiz Technologies",
+    icon: wonderbiz,
+    icon_width:'40px',
+    iconBg: "#E6DEDD",
+    date: `Nov 2023 - ${new Date().getFullYear()} (present)`,
+    points: [
+        "Responsibilities include developing and maintaining web applications using React.js, collaborating with team members to design and implement user interfaces, ensuring high performance, and delivering efficient front-end solutions",
+        
+    ],
+  },
 ];
 
 export const socialMedia = [
@@ -125,6 +138,12 @@ export const socialMedia = [
       icon:whatsapp,
       svgIcon:<FaWhatsapp size={30}/>,
       link:'https://wa.me/919699912349'
+    },
+    {
+      name:'Github',
+      icon:whatsapp,
+      svgIcon:<FaGithub size={30}/>,
+      link:'https://www.github.com/sktaukir04'
     }
     ]
 

@@ -38,6 +38,7 @@ const Contact = () => {
           from_email: form.email,
           to_email: "shaikhtaukir0212@gmail.com",
           message: form.message,
+          client_email: form.email,
         },
         'FCa47-5JUO9xZNCIt',
       )
@@ -69,9 +70,9 @@ const Contact = () => {
           <p className='text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300'>Contact</p>
           <p className='text-gray-300 py-4'> Submit the form below or shoot me an email - shaikhtaukir0212@gmail.com</p>
         </div>
-        <input className='bg-[#ccd6f6] p-2' type="text" placeholder='Name' name='name' value={form.name} onChange={handleChange} />
-        <input className='my-4 p-2 bg-[#ccd6f6]' type="email" placeholder='Email' name='email' value={form.email} onChange={handleChange} />
-        <textarea className='bg-[#ccd6f6] p-2' name="message" rows="10" placeholder='Message' value={form.message} onChange={handleChange}></textarea>
+        <input className='bg-[#ccd6f6] text-black p-2' type="text" required placeholder='Name' name='name' value={form.name} onChange={handleChange} />
+        <input className='my-4 p-2 bg-[#ccd6f6] text-black' type="email" required placeholder='Email' name='email' value={form.email} onChange={handleChange} />
+        <textarea className='bg-[#ccd6f6] p-2 text-black' name="message" required rows="10" placeholder='Message' value={form.message} onChange={handleChange}></textarea>
         <button className='text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center'>Send 👉 </button>
       </form>
 
